@@ -10,7 +10,7 @@ app.use('/api',route);
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://127.0.0.1:27017/FOLA");
+        await mongoose.connect("mongodb://127.0.0.1:27017/gestion");
         console.log("Database connected successfully");
     } catch (err) {
         console.error("Database connection error:", err);
