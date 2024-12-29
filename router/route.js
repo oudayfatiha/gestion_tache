@@ -18,9 +18,9 @@ route.get('/task',async (req,res)=>{
 
 route.post('/Task',async (req,res)=>{
     try{ 
-        const{name,description,statu}=req.body;
+        const{name,description,completed}=req.body;
     let new_Task = new Task({
-        name:req.body.name,
+        title:req.body.title,
         description:req.body.description,
         completed:req.body.completed
     }) 
